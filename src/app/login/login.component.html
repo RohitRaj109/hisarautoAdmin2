@@ -1,0 +1,26 @@
+<div class="beforelogin">
+    <div class="row align-items-center bodywraper">
+       <div class="col">
+        <form class="form-box" >
+          <div class="login-box max-WT-500">
+           <form [formGroup]="form">
+            <div class="login-box-body">
+                <div class="text-center">
+                   <h3>LOGIN</h3>
+                </div>
+               <div class="form-group">
+                 <input type="email" class="form-control form-control-style1 " formControlName="email" #email placeholder="Email Address" required/>
+               </div>
+               <div class="form-group">
+                 <input type="password" class="form-control form-control-style1 " formControlName="pass" #pass placeholder="Password" required/>
+               </div>
+               <div class="text-center mt-20">
+                <a  class="btn btn-gray btn-large radius0 max-WT-350"  (click)="onLogIn()">LOGIN</a>
+               </div>
+          </div>
+           </form>
+       </div>
+       </form>
+    </div>
+ </div>
+ </div>
