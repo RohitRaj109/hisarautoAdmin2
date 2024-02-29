@@ -16,6 +16,9 @@ export class ServerService {
   get(url:string){
     return this.http.get(`${environment.baseUrl}${url}`);
   }
+  delete(id:String){
+    return this.http.delete(`${id}`);
+  }
   navigateTo(url:string){
    // this.router.navigate([url])
    this.router.navigateByUrl(url)

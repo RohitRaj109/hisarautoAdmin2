@@ -6,30 +6,36 @@
            <form >
             <div class="login-box-body">
                 <div class="text-center">
-                   <h3>Add New Product</h3>
+                  
+                   <h3 >Add New Product</h3>
                 </div>
                <div class="form-group">
                  <input type="text" formControlName="title" #email class="form-control form-control-style1 "  placeholder="Product Title" required/>
                </div>
                <div class="form-group">
-                 <input type="text" class="form-control form-control-style1 " formControlName="description" placeholder="Description" required/>
+                 <input type="text" formControlName="description" class="form-control form-control-style1 "  placeholder="Description" required/>
                </div>
                <div class="form-group">
-                <input type="text" class="form-control form-control-style1 " formControlName="richDescription" placeholder="full Description" required/>
+                <input type="text" formControlName="richDescription" class="form-control form-control-style1 "  placeholder="full Description" required/>
               </div>
               
                <div class="form-group">
-                <input type="text" class="form-control form-control-style1 " formControlName="contactNo" placeholder="contact no" required/>
+                <input type="text"formControlName="contactNo" class="form-control form-control-style1 "  placeholder="contact no" required/>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control form-control-style1 " formControlName="emailId" placeholder="Email id" required/>
+                <input type="text"formControlName="emailId" class="form-control form-control-style1 "  placeholder="Email id" required/>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control form-control-style1 " formControlName="countInStock" placeholder="countInStock" required/>
+                <input type="text" formControlName="countInStock" class="form-control form-control-style1 "  placeholder="countInStock" required/>
               </div>
-              <div class="text-center mt-20">
-                <a  class="btn btn-gray btn-large radius0 max-WT-350"  (click)="createProduct()">Create</a>
+              <div class="text-center mt-20"  >
+                <a  class="btn btn-gray btn-large radius0 max-WT-350"(click)="createProduct()" >Create</a>
+              
                </div>
+               <!-- <div class="text-center mt-20" *ngIf="editProduct" >
+               
+                <a  class="btn btn-gray btn-large radius0 max-WT-350"  (click)="editProduct()">Update</a>
+               </div> -->
           </div>
            </form>
        </div>
